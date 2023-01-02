@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	if (fd1 == -1)
 	{   
 
-		perror("Can not open file %s", argv[1]);
+		perror("Can not open file");
 		syslog (LOG_INFO, "Can not open file %s", argv[1]);
                 return 1;
 	} else {
