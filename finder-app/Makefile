@@ -14,13 +14,10 @@ endif
 
 
 
-
 CFLAGS= -Wall -W -O2 -lrt -g
 
-writer: writer.c
+writer write &: writer.c
 	$(CC) -o writer writer.c
-
-write: writer.c
 	$(CC) -o write writer.c
 
 clean:
