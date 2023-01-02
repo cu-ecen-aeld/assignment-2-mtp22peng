@@ -17,9 +17,9 @@ endif
 
 CFLAGS= -Wall -W -O2 -lrt -g
 
-write: write.c
-	$(CC) -o write write.c
+writer: writer.c
+	$(CC) -o writer writer.c
 
 
 clean:
-	rm -f write.o write
+	rm -f writer.o writer
