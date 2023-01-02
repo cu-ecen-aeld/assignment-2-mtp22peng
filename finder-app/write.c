@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		syslog (LOG_INFO, "Too few arguments");
 
 		perror("Too few arguments");
-                return(1);
+                return 1;
 	}
 
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
 		perror("Can not open file %s", argv[1]);
 		syslog (LOG_INFO, "Can not open file %s", argv[1]);
-                return(1);
+                return 1;
 	} else {
 		syslog (LOG_INFO, "Writing %s to %s", argv[2], argv[1]);
 		nr = write (fd1, argv[2], strlen (argv[2])); 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 
 			perror("Can not write string");
 			syslog (LOG_INFO, "Can not write string");
-                        return(1);
+                        return 1;
 		}
 
 
